@@ -1,0 +1,98 @@
+/* デザイントークン。色はここに集約し、ライト／ダークは data-theme で切り替える */
+:root {
+  --font: 'Inter', system-ui, -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', 'Noto Sans JP', 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+
+  color-scheme: light;
+  --bg: #eef0f4;
+  --surface: #ffffff;
+  --surface-2: #f5f6f9;
+  --surface-3: #eaecf2;
+  --canvas-bg: #f6f7fa;
+  --grid-dot: rgba(70, 82, 110, 0.28);
+  --grid-major: rgba(70, 82, 110, 0.07);
+  --text: #1a1e27;
+  --muted: #5b6577;
+  --faint: #8a93a4;
+  --border: #dde1e9;
+  --border-strong: #c5cbd7;
+  --accent: #4258e0;
+  --accent-soft: rgba(66, 88, 224, 0.18);
+  --accent-text: #ffffff;
+  --danger: #d6264b;
+  --danger-soft: rgba(214, 38, 75, 0.12);
+  --warn: #b45309;
+  --warn-soft: rgba(217, 119, 6, 0.14);
+  --ok: #15803d;
+  --ok-soft: rgba(21, 128, 61, 0.12);
+
+  --c-start: #12a05a;
+  --c-action: #2f6fe4;
+  --c-condition: #7c4ddf;
+  --c-end: #e0345c;
+  --c-note: #c99a06;
+  --c-yes: #16a34a;
+  --c-no: #ea580c;
+
+  --node-bg: #ffffff;
+  --node-border: #cfd5e0;
+  --note-bg: #fff3b0;
+  --note-border: #e4c84b;
+  --note-text: #4a3d00;
+  --edge: #7c879b;
+  --group-bg: rgba(66, 88, 224, 0.045);
+  --group-border: rgba(66, 88, 224, 0.4);
+  --group-text: #3446b8;
+
+  --shadow-sm: 0 1px 2px rgba(20, 28, 48, 0.08);
+  --shadow-node: 0 1px 2px rgba(20, 28, 48, 0.1), 0 4px 14px rgba(20, 28, 48, 0.06);
+  --shadow-pop: 0 10px 38px rgba(20, 28, 48, 0.22), 0 2px 8px rgba(20, 28, 48, 0.1);
+  --radius: 10px;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0d0f14;
+  --surface: #171a22;
+  --surface-2: #1d212b;
+  --surface-3: #262b37;
+  --canvas-bg: #11141a;
+  --grid-dot: rgba(160, 175, 210, 0.3);
+  --grid-major: rgba(160, 175, 210, 0.07);
+  --text: #e8ebf2;
+  --muted: #a1abbd;
+  --faint: #78829a;
+  --border: #272c38;
+  --border-strong: #38404f;
+  --accent: #8399ff;
+  --accent-soft: rgba(131, 153, 255, 0.24);
+  --accent-text: #0d1020;
+  --danger: #ff6b88;
+  --danger-soft: rgba(255, 107, 136, 0.14);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, 0.14);
+  --ok: #4ade80;
+  --ok-soft: rgba(74, 222, 128, 0.12);
+
+  --c-start: #34d399;
+  --c-action: #6aa0ff;
+  --c-condition: #b69cff;
+  --c-end: #ff7a96;
+  --c-note: #f5c518;
+  --c-yes: #4ade80;
+  --c-no: #fb923c;
+
+  --node-bg: #1c2029;
+  --node-border: #343b4a;
+  --note-bg: #4b4321;
+  --note-border: #7a6a26;
+  --note-text: #fdf0b3;
+  --edge: #7f8aa3;
+  --group-bg: rgba(131, 153, 255, 0.06);
+  --group-border: rgba(131, 153, 255, 0.45);
+  --group-text: #aebbff;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-node: 0 1px 2px rgba(0, 0, 0, 0.5), 0 6px 18px rgba(0, 0, 0, 0.28);
+  --shadow-pop: 0 12px 40px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4);
+}
